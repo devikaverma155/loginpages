@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <main>
+        <div class="box" id="formContainer">
+            <button class="close-button" onclick="closeForm()"><img src="./assets/x-button.png"></button>
+            <div class="users">
+                <div class="user1">
+                    <img src="./assets/restrowner.png">
+                    <div class="username">RestroOwner</div>
+                </div>
+                <div class="user1">
+                    <img src="./assets/restrowner.png">
+                    <div class="username">RestroOwner</div>
+                </div><div class="user1">
+                    <img src="./assets/restrowner.png">
+                    <div class="username">RestroOwner</div>
+                </div><div class="user1">
+                    <img src="./assets/restrowner.png">
+                    <div class="username">RestroOwner</div>
+                </div>
+            </div>
+
+            <div class="lowerpart">
+                <div class="formbox">
+                    <h1 style="color:#FFA900;"> Create New account</h1>
+                    <div class="content" style="color: white;">
+                        <p>Hii Foodie!!</p>
+                        <h1>Welcome to Samaadhaan</h1>
+                    </div>
+                    <div class="form">
+                    
+
+                        <form action="">
+                            <fieldset>
+                                <legend>Full Name</legend>
+                                <!-- <input type="text" id="restroname" name="restroname" placeholder="Enter your restro name " required> -->
+                            </fieldset>
+                            <fieldset>
+                                <legend>
+                                    Phone No.
+                                </legend>
+                                <!-- <input type="text" id="restroname" name="restroname" placeholder="Enter your restro name " required> -->
+                            </fieldset>
+      <section class="container-fluid bg-body-tertiary d-block">
+                                <div class="row justify-content-left">
+                                    <div class="col-10 col-md-6 col-lg-4">
+                                        <div class="card bg-white mb-5 mt-5 border-0">
+                                            <div class="card-body p-5 text-center">
+                                               <p style="color: white;font-weight:bold;">Enter Otp</p>
+                                                <div class="otp-field mb-4">
+                                                    <input type="number" />
+                                                    <input type="number" disabled />
+                                                    <input type="number" disabled />
+                                                    <input type="number" disabled />
+                                                    <input type="number" disabled />
+                                                    <input type="number" disabled />
+                                                </div>
+                                                
+                                                <button class="buttonv">
+                                                    Verify
+                                                </button>
+                        
+                                                <p class="resend text-muted mb-0">
+                                                    Didn't receive code? <a href="" style="color: #0038FF;">Request again</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        
+                            <!-- <button style="background-color: white; width: 40%;
+                            height: 9%;
+                            border-radius: 50px;
+                            margin-top: 10px;
+                            color: #555; /* Greyish color */
+                            font-size: 16px; /* Bigger font size */
+                            font-weight: bold;  id="otpTrigger">Trigger OTP</button> -->
+                    
+                        </form>
+                    </div>
+                    
+                   <button style="  background-color: white; width: 100%;
+                        height: 9%;
+                        border-radius: 50px;
+                        margin-top: 10px;
+                        color: #555; /* Greyish color */
+                        font-size: 16px; /* Bigger font size */
+                        font-weight: bold; " >Resent OTP in 00:24</button>
+                    
+
+                </div>
+
+                <div class="imagebox">
+                    <img src="./assets/Group 144.png">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <button onclick="closeForm()">Toggle Form</button>
+<script>
+function closeForm() {
+            var formContainer = document.getElementById('formContainer');
+            formContainer.classList.add('hidden');
+        };
+    </script>
+</body>
+</html>

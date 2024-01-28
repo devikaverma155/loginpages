@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <main>
+        
+        <div class="box" id="formContainer">
+            <button class="close-button" onclick="closeForm()"><img src="./assets/x-button.png"></button>
+            <div class="users">
+                <div class="user1">
+                    <img src="./assets/restrowner.png">
+                    <div class="username">RestroOwner</div>
+                </div>
+                <div class="user1">
+                    <img src="./assets/restrowner.png">
+                    <div class="username">RestroOwner</div>
+                </div><div class="user1">
+                    <img src="./assets/restrowner.png">
+                    <div class="username">RestroOwner</div>
+                </div><div class="user1">
+                    <img src="./assets/restrowner.png">
+                    <div class="username">RestroOwner</div>
+                </div>
+            </div>
+
+            <div class="lowerpart">
+                <div class="formbox">
+                    <h1 style="color:#FFA900;">New account</h1>
+                    <div class="content" style="color: white;">
+                        <p>Hii Foodie!!</p>
+                        <h1>Welcome to Samaadhaan</h1>
+                    </div>
+                        <form action="" style="margin-top
+                        :10px;">
+                            <fieldset >
+                                <legend style="height: 35px;">
+                                    Ph.number
+                                </legend>
+                                <!-- <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number" required> -->
+                            </fieldset>
+                            <h5 style="color: white;font: 
+                            Inter;">Having difficulty? Contact us at</h5>
+                            <div class="link" style="margin-top: 10px;">
+                                <a style="margin-top: 10px;" href="#">+91 9508120493</a> <a href="#">sammadhaan@gmail.com</a>
+                            </div>
+                            
+                        </form>
+                        <div style="margin-top: 80px;" id="nilesh">
+                            <div id="icon"><img src="./assets/nileshuser.png" width="100%" height="100%"></div>
+                            <div id="username" >
+                                <p>Continue as Nilesh Agarwal</p>
+                                <p>ui22cs54@iiitsurat.ac.in</p>
+                            </div>
+                            <div id="google"><img src="./assets/Google__G__logo.svg.png" width="100%" height="100%"></div>
+                        </div>
+                       <p style="color: white;font: 
+                       Inter;">Don't have a accout yet? <a href="" style="color: #0038FF;">Create Account</a></p>
+                       
+                   <button style="  background-color: white; width: 100%;
+                   margin-top: 100px;
+                        height: 9%;
+                        border-radius: 50px;
+                        margin-top: 10px;
+                        color: #555; /* Greyish color */
+                        font-size: 16px; /* Bigger font size */
+                        font-weight: bold; " >Next</button>
+                    
+
+                </div>
+
+                <div class="imagebox">
+                    <img src="./assets/Group 144.png">
+                </div>
+            </div>
+        </div>
+     
+    </main>
+
+    <button onclick="toggleForm()">Toggle Form</button>
+    <script>
+        function toggleForm() {
+            var formContainer = document.getElementById('formContainer');
+            formContainer.classList.toggle('hidden');
+            
+            // Toggle the class for blurred background on the body element
+            document.body.classList.toggle('blurry-background');
+        };
+    </script>
+</body>
+</html>

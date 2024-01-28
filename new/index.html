@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <main>
+        <div class="box" id="formContainer">
+            <button class="close-button" onclick="closeForm()"><img src="./assets/x-button.png"></button>
+            <div class="users">
+                <!-- User profile with image and username -->
+                <!-- Repeat for each user -->
+                <div class="user1" style="box-sizing: border-box;">
+                    <img src="./assets/restrowner.png">
+                    <div class="username">tiffin
+                        Walla
+                    </div>
+                </div>
+                <div class="user1">
+                    <img src="./assets/restrowner.png">
+                    <div class="username">Master Chef</div>
+                </div>
+                <div class="user1">
+                    <img src="./assets/restrowner.png">
+                    <div class="username">Streetvender</div>
+                </div>
+                <div class="user1">
+                    <img src="./assets/restrowner.png">
+                    <div class="username">RestroOwner</div>
+                </div>
+            </div>
+
+            <div class="lowerpart">
+                <div class="formbox">
+                    <!-- Heading for the new account section -->
+                    <h1 style="color:#FFA900;">New account</h1>
+                    <!-- Greeting and welcome message -->
+                    <div class="content" style="color: white;">
+                        <p style="font-size: 18px;
+                        font-weight: bold;
+                        line-height: 19px;">Hii Foodie!!</p>
+                        <h1>Welcome to Samaadhaan</h1>
+                    </div>
+                    <div class="form">
+                        <!-- Process container with dotted line and dots for visual indication -->
+                        <div class="process-container">
+                            <div class="dotted-line"></div>
+                            <div class="dot"></div>
+                            <!-- Repeat dots for each step -->
+                        </div>
+
+                        <!-- Input fields for restaurant name, owner name, and phone number -->
+                        <form action="">
+                            <fieldset>
+                                <legend>Restaurant name</legend>
+                                <!-- Input field commented out for now -->
+                            </fieldset>
+                            <fieldset>
+                                <legend>Owner full Name</legend>
+                                <!-- Input field commented out for now -->
+                            </fieldset>
+                            <fieldset>
+                                <legend>Phone No.</legend>
+                                <!-- Input field commented out for now -->
+                            </fieldset>
+                            <div class="facility"><img src="./assets/Rectangle 462.png" alt="">
+                                <h5>Delivery facility available ?</h5>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!-- Next button to proceed to the next step -->
+                    <button style="background-color: white; width: 100%; height: 50px; border-radius: 50px;
+                        margin-top: 10px; color: #555; font-size: 16px; font-weight: bold;">Next</button>
+                </div>
+
+                <!-- Image box displaying an image -->
+                <div class="imagebox">
+                    <img src="./assets/Group 144.png">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Button to toggle the form visibility with an event handler -->
+    <button onclick="closeForm()">Toggle Form</button>
+
+    <!-- JavaScript function to close the form -->
+    <script>
+        function closeForm() {
+            var formContainer = document.getElementById('formContainer');
+            formContainer.classList.add('hidden');
+        };
+    </script>
+</body>
+</html>
